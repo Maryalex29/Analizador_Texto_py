@@ -62,3 +62,5 @@ if (posicion!=-1):
 else:
     print(f"la palabra {palabra} no se encuentra en el texto")
 print("------------------------------------------------")
+
+print("se termino")
