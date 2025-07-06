@@ -7,7 +7,7 @@ letra2 = input("Ingrese la segunda letra: ").lower()
 letra3 = input("Ingrese la tercera letra: ").lower()
 
 #convertir las letras ingresadas en una lista
-letras=[{letra1},{letra2}, {letra3}]
+letras=[{letra1},{letra2},{letra3}]
 
 #contar las veces que aparece repetida cada letra
 x=texto.count(letra1)
@@ -27,8 +27,8 @@ letra_final = texto[-1]
 invertido=texto[::-1]
 
 #buscar la palabra python
-palabra=input("palabra a buscar:")
-posicion=(texto.find('palabra'))
+palabra=input("palabra a buscar:").lower()
+posicion = texto.lower().find(palabra)
 
 
 
@@ -58,7 +58,7 @@ print("------------------------------------------------")
 print("------------------------------------------------")
 print("BUSCANDO LA PALABRA PYTHON")
 if (posicion!=-1):
-    print(f"la palabra {palabra} se encuentra en el texto")
+    print(f"la palabra {palabra}  se encuentra en el texto")
 else:
     print(f"la palabra {palabra} no se encuentra en el texto")
 print("------------------------------------------------")
